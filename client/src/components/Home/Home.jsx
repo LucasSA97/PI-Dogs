@@ -9,7 +9,8 @@ import Paginado from "../Paginado/Paginado";
 
 const Home = () => {
     const dispatch = useDispatch()
-    const allDogs = useSelector((state)=> state.dogs)
+    const allDogs = useSelector((state)=> state.allDogs)
+
     const [currentePage, setCurrentPage] = useState(1) //Pagina que va a empezar en 1
     const [dogsForPage, setDogsForPage]=useState(8) //Dogs por pagina
     const indexOfLastDog = currentePage * dogsForPage //Indice de ultimo dog por pagina
@@ -55,9 +56,9 @@ const Home = () => {
                 <option value="tempApi">Temperaments API</option>
             </select>
             <Paginado
+             paginado={paginado}
              dogsForPage={dogsForPage}
              allDogs={allDogs.lenght}
-             paginado={paginado}
              />
                 {currentDogs?.map((el)=>{
                 return(

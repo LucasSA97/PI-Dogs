@@ -13,7 +13,8 @@ const initialState ={
         return{
             ...state,
             allDogs:action.payload}
-        };
+        }
+        
 
         case SEARCH_DOG:{
           return{

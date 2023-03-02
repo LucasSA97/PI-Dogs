@@ -1,4 +1,5 @@
 import React from "react";
+
 export default function Paginado ({dogsForPage, allDogs, paginado}){
     const pageNumber = [];
 
