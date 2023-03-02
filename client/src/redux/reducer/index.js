@@ -1,27 +1,31 @@
-import { GET_DOGS } from "../actions";
-import { ORDER_BY_NAME } from "../actions";
+import { GET_DOGS, SEARCH_DOG, GET_BY_ID } from "../actions";
+
 
 
 const initialState ={
     allDogs: [],
-    dogDescription:{},
-    temps: [],
-    searchDog:[],  
-    filter: []  
+    dogDescription:{},   
   }
 
   function rootReducer(state = initialState, action){
     switch(action.type){
-        case GET_DOGS:
+        case GET_DOGS:{
         return{
             ...state,
-            allDogs:action.payload
+            allDogs:action.payload}
         };
-        case ORDER_BY_NAME:
-          
+
+        case SEARCH_DOG:{
           return{
             ...state,
+            allDogs:action.payload}
+          }
 
+        case GET_BY_ID:{
+            return{
+              ...state,
+              dogDescription:action.payload
+            }
           }
         default:
           return{ ...state}

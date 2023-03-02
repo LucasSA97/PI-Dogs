@@ -11,11 +11,11 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Switch>
-      <Route exact path = "/" component = {Landing}/>
-      <Route exact path = "/home" component = {Home}/>
-      <Route exact path = "/detail/:id" component = {Detail}/>
-      <Route exact path = "/dog" component = {Form}/>
-      <Route exact path = "/nav" component = {NavBar}/>
+      <Route exact path = "/" component = {<Landing/>}/>
+      <Route exact path = "/home" component = {<Home/>}/>
+      <Route exact path = "/detail/:id" component = {<Detail/>}/>
+      <Route exact path = "/form" component = {<Form/>}/>
+      <Route exact path = "/nav" component = {<NavBar/>}/>
       </Switch>
     </div>
     </BrowserRouter>
@@ -23,3 +23,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+  

@@ -1,0 +1,28 @@
+.backGround {
+    background-color: rgb(177, 177, 67);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    height: 98vh;
+    width: 98vw;
+}
+.title{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 85px;
+    color: #6e5307;
+    margin: 2px;
+}
+.landingButton {
+    position: absolute;
+    right: 5%;
+    top: 24%;
+    background-color: #f2ba83;
+    font-size: 50px;
+    border-radius: 30px;
+}
+.landingButton:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 10px #6e5307;
+}

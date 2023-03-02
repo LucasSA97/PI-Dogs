@@ -1,13 +1,27 @@
-import { Link } from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
+import SearchBar from "../SearchBar/SearchBar";
+import styles from "./NavBar.module.css";
 
-const NavBar = ( ) => {
+
+
+function NavBar ( ) {
      return(
-        <div>
+        <div className={styles.navBar}>
+            <div>
+                <SearchBar></SearchBar>
+            </div>
+            <div>
             <Link to="/home">Home</Link>
-            <Link to="/dog">Form</Link>
-
+            </div>
+            <div>
+            <Link to="/form">Create Dog</Link>
+            </div>
         </div>
      )
 }
 
 export default NavBar;
+
+
+
