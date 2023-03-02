@@ -54,5 +54,5 @@ export default Card;
 
 
 //Este componente debe mostrar la info de cada perro mapeado y ademas tener un link
-// para llevarnos a ver la informacion detallada
+// para llevarnos a ver la informacion detallada*/
                     

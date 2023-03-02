@@ -11,11 +11,15 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Switch>
-      <Route exact path = "/" component = {<Landing/>}/>
-      <Route exact path = "/home" component = {<Home/>}/>
-      <Route exact path = "/detail/:id" component = {<Detail/>}/>
-      <Route exact path = "/form" component = {<Form/>}/>
-      <Route exact path = "/nav" component = {<NavBar/>}/>
+      <Route exact path = "/" render = {()=><Landing/>}/>
+     
+      <Route exact path = "/home" render={() => <Home />}/>
+
+      <Route exact path = "/detail/:id" render = {()=><Detail/>}/>
+
+      <Route exact path = "/form" render = {()=><Form/>}/>
+      
+      <Route exact path = "/nav" render = {()=><NavBar/>}/>
       </Switch>
     </div>
     </BrowserRouter>
